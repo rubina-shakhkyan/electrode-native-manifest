@@ -14,7 +14,7 @@ import com.picnic.vgs.fields.number.CardNumberPackage;
 import com.picnic.vgs.fields.expiration.CardExpirationPackage;
 import com.picnic.vgs.fields.OnCreateViewInstanceListener;
 
-public class RNFetchBlobPackagePlugin implements ReactPlugin {
+public class VGSManagerPackagePlugin implements ReactPlugin {
     VGSCollectPackage collect = new VGSCollectPackage();
     OnCreateViewInstanceListener listener = collect.getListener();
     CardCVCPackage cvc = new CardCVCPackage(listener);
