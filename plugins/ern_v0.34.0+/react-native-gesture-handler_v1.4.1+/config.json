@@ -27,7 +27,7 @@
       {
         "path": "lib/src/main/java/com/walmartlabs/ern/container/ElectrodeMiniAppFragment.java",
         "string": "mMiniAppView = null;",
-        "replaceWith": "\n            if (mMiniAppView instanceof RNGestureHandlerEnabledRootView) {\n                ((RNGestureHandlerEnabledRootView) mMiniAppView).tearDown();\n            }\n        mMiniAppView = null;"
+        "replaceWith": "\n            if (mMiniAppView instanceof RNGestureHandlerEnabledRootView) {\n                ((RNGestureHandlerEnabledRootView) mMiniAppView).tearDown();\n            }\n            mMiniAppView = null;"
       }
     ]
   },
