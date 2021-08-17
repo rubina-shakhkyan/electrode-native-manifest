@@ -18,6 +18,16 @@
         "path": "lib/src/main/java/com/walmartlabs/ern/container/ElectrodeReactActivityDelegate.java",
         "string": "    }\n}",
         "replaceWith": "    }\n\n    @Override\n    protected ReactRootView createRootView() {\n        return new RNGestureHandlerEnabledRootView(getContext());\n    }\n}"
+      },
+      {
+        "path": "lib/src/main/java/com/walmartlabs/ern/container/ElectrodeMiniAppFragment.java",
+        "string": "import com.facebook.react.ReactRootView;",
+        "replaceWith": "import com.facebook.react.ReactRootView;\nimport com.swmansion.gesturehandler.react.RNGestureHandlerEnabledRootView;"
+      },
+      {
+        "path": "lib/src/main/java/com/walmartlabs/ern/container/ElectrodeMiniAppFragment.java",
+        "string": "mMiniAppView = null;",
+        "replaceWith": "\n            if (mMiniAppView instanceof RNGestureHandlerEnabledRootView) {\n                ((RNGestureHandlerEnabledRootView) mMiniAppView).tearDown();\n            }\n        mMiniAppView = null;"
       }
     ]
   },
