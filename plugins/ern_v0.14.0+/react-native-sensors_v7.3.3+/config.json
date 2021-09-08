@@ -1,0 +1,32 @@
+{
+    "android": {
+      "root": "android",
+      "dependencies": []
+    },
+    "ios": {
+      "copy": [
+        {
+          "dest": "{{{projectName}}}/Libraries/RNSensors",
+          "source": "ios/*"
+        }
+      ],
+      "pbxproj": {
+        "addHeaderSearchPath": [
+          "\"$(SRCROOT)/{{{projectName}}}/Libraries/RNSensors/**\""
+        ],
+        "addProject": [
+          {
+            "group": "Libraries",
+            "path": "RNSensors/RNSensors.xcodeproj",
+            "staticLibs": [
+              {
+                "name": "libRNSensors.a",
+                "target": "RNSensors"
+              }
+            ]
+          }
+        ]
+      }
+    }
+}
+
